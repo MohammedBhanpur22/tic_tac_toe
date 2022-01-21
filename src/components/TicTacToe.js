@@ -93,7 +93,7 @@ const TicTacToe = () => {
     if (winner !== null && gameState !== GAME_STATES.over) {
       declareWinner(winner);
     }
-  }, [gameState, grid, nextMove]);
+  }, [players,gameState, grid, nextMove]);
 
   const move = useCallback(
     (index, player) => {
